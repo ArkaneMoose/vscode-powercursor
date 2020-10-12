@@ -1,0 +1,97 @@
+{
+  "name": "vscode-powercursor",
+  "displayName": "Powercursor",
+  "description": "Supercharge your cursors.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Rishov Sarkar",
+    "email": "ArkaneMoose@users.noreply.github.com",
+    "url": "https://github.com/ArkaneMoose"
+  },
+  "publisher": "ArkaneMoose",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArkaneMoose/vscode-powercursor.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-powercursor.selectNext",
+    "onCommand:vscode-powercursor.selectPrevious",
+    "onCommand:vscode-powercursor.selectToNext",
+    "onCommand:vscode-powercursor.selectToPrevious"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-powercursor.selectNext",
+        "title": "Powercursor: Find Next"
+      },
+      {
+        "command": "vscode-powercursor.selectPrevious",
+        "title": "Powercursor: Find Previous"
+      },
+      {
+        "command": "vscode-powercursor.selectToNext",
+        "title": "Powercursor: Select To Next Match"
+      },
+      {
+        "command": "vscode-powercursor.selectToPrevious",
+        "title": "Powercursor: Select To Previous Match"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vscode-powercursor.selectNext",
+        "key": "ctrl+k alt+/",
+        "mac": "cmd+k alt+/",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "vscode-powercursor.selectPrevious",
+        "key": "ctrl+k alt+shift+/",
+        "mac": "cmd+k alt+shift+/",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "vscode-powercursor.selectToNext",
+        "key": "ctrl+k /",
+        "mac": "cmd+k /",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "vscode-powercursor.selectToPrevious",
+        "key": "ctrl+k shift+/",
+        "mac": "cmd+k shift+/",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.50.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.27",
+    "eslint": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "glob": "^7.1.6",
+    "mocha": "^8.1.3",
+    "typescript": "^4.0.2",
+    "vscode-test": "^1.4.0"
+  }
+}
