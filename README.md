@@ -2,6 +2,8 @@
 
 Supercharge your cursors.
 
+![Demo animation](images/demo.gif)
+
 ## Features
 
 Adds the following commands:
@@ -32,6 +34,6 @@ Adds the following commands:
 
 ## Release Notes
 
-### Unreleased
+### v1.0.0
 
 Initial release of Powercursor.

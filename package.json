@@ -2,13 +2,14 @@
   "name": "vscode-powercursor",
   "displayName": "Powercursor",
   "description": "Supercharge your cursors.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "icon": "images/icon.png",
   "author": {
     "name": "Rishov Sarkar",
     "email": "ArkaneMoose@users.noreply.github.com",
     "url": "https://github.com/ArkaneMoose"
   },
-  "publisher": "ArkaneMoose",
+  "publisher": "RishovSarkar",
   "repository": {
     "type": "git",
     "url": "https://github.com/ArkaneMoose/vscode-powercursor.git"
