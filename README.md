@@ -37,3 +37,7 @@ Adds the following commands:
 ### v1.0.0
 
 Initial release of Powercursor.
+
+### v1.0.1
+
+Set `extensionKind` so that Powercursor prefers to run as a UI extension.

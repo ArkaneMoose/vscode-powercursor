@@ -2,7 +2,7 @@
   "name": "vscode-powercursor",
   "displayName": "Powercursor",
   "description": "Supercharge your cursors.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "images/icon.png",
   "author": {
     "name": "Rishov Sarkar",
@@ -28,6 +28,10 @@
     "onCommand:vscode-powercursor.selectToPrevious"
   ],
   "main": "./out/extension.js",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "contributes": {
     "commands": [
       {
