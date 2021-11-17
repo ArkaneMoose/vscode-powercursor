@@ -41,3 +41,7 @@ Initial release of Powercursor.
 ### v1.0.1
 
 Set `extensionKind` so that Powercursor prefers to run as a UI extension.
+
+### v1.0.2
+
+Add support for VS Code for the Web.
